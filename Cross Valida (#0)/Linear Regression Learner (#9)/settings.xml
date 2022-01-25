@@ -10,7 +10,14 @@
         <config key="column_filter">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="0"/>
+                <entry key="array-size" type="xint" value="7"/>
+                <entry key="0" type="xstring" value="Front"/>
+                <entry key="1" type="xstring" value="Item A"/>
+                <entry key="2" type="xstring" value="Item B"/>
+                <entry key="3" type="xstring" value="Legs"/>
+                <entry key="4" type="xstring" value="Rarity"/>
+                <entry key="5" type="xstring" value="Theme"/>
+                <entry key="6" type="xstring" value="Top"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="0"/>
@@ -23,7 +30,14 @@
                 <entry key="excludeMatching" type="xboolean" value="false"/>
             </config>
             <config key="datatype">
-                <config key="typelist"/>
+                <config key="typelist">
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                </config>
             </config>
         </config>
         <entry key="include_constant" type="xboolean" value="true"/>
@@ -48,10 +62,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Column &quot;Pilot&quot; has too many different values - will be ignored during training%%00010The following columns are redundant and will not contribute to the model: Top^2, Top^3, Rarity^4, Item A^6, Front^7, Theme^8, Item A^9, Item B^13, Top^13, Theme^14. Coefficient statistics will not be accurate and contain missing information."/>
-    </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2"/>
     <entry key="node-name" type="xstring" value="Linear Regression Learner"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -80,7 +90,7 @@
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 100, Cols: 5"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 8, Cols: 5"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
         </config>
     </config>
